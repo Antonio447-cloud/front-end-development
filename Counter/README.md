@@ -1,4 +1,4 @@
-## Above you will find the source code of a Counter App.
+## Above you will find the source code of a simple Counter App.
 
 - Output of the Counter App:
 
