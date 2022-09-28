@@ -2,4 +2,4 @@
 
 - Output of the website:
 
-![output](./out.png)
+![output](./output.png)
