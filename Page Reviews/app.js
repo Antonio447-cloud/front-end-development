@@ -72,7 +72,7 @@ nextBtn.addEventListener('click', function () {
     if(currentId > reviews.length - 1) {
         currentId = 0;
     } 
-    showPerson()
+    showPerson();
 });
 
 // show prev person
@@ -87,5 +87,5 @@ prevBtn.addEventListener('click', function () {
 // show random person
 randomBtn.addEventListener('click', function () {
     currentId = Math.floor(Math.random() * reviews.length)
-    showPerson()
+    showPerson();
 });
