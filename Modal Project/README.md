@@ -4,6 +4,6 @@
 
 ![output](./output3.png)
 
-- Once we click the "OPEN MODAL" button:
+- Once we click the open modal button:
 
 ![output](./output4.png)
