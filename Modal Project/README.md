@@ -6,4 +6,4 @@
 
 - Once we click the "Open Modal" button:
 
-![output](./output2.png)
+![output](./output4.png)
