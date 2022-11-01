@@ -2,7 +2,7 @@
 
 - Output of the modal section:
 
-![output](./output.png)
+![output](./output3.png)
 
 - Once we click the "Open Modal" button:
 
