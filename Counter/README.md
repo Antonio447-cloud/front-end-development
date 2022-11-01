@@ -1,5 +1,5 @@
-## Above you will find the source code of a counter.
+## Above you will find the source code of a Counter.
 
-- Output of the counter:
+- Output of the Counter:
 
 ![counter](./output.png)
