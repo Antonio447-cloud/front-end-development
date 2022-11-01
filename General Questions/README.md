@@ -2,8 +2,8 @@
 
 - Output of general questions section:
 
-![output](./output3.png)
+![output](./output.png)
 
 - Output when toggling button:
 
-![output](./output4.png)
+![output](./output2.png)
