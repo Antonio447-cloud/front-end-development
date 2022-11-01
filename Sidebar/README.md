@@ -2,4 +2,4 @@
 
 - Output of sidebar:
 
-![output](./output.png)
+![output](./output2.png)
