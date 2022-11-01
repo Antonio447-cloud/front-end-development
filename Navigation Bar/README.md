@@ -6,4 +6,4 @@ Output of the navigation bar fullscreen:
 
 Output of the navigation bar windowed:
 
-![navigation](./output3.png)
+![navigation](./output4.png)
