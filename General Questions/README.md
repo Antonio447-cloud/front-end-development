@@ -2,7 +2,7 @@
 
 - Output of general questions section:
 
-![output](./output.png)
+![output](./output3.png)
 
 - Output when toggling button:
 
