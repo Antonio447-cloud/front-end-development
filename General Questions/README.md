@@ -6,4 +6,4 @@
 
 - Output when toggling button:
 
-![output](./output2.png)
+![output](./output4.png)
