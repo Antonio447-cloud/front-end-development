@@ -2,4 +2,4 @@
 
 - Output of the counter:
 
-![counter](./output.png)
+![counter](./output2.png)
