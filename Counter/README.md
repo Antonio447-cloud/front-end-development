@@ -1,4 +1,4 @@
-## Above you will find the source code of a counter.
+## Above you will find the source code of a simple counter.
 
 - Output of the counter:
 
