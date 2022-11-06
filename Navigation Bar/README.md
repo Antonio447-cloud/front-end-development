@@ -2,7 +2,7 @@
 
 Output of navigation bar fullscreen:
 
-![navigation](./output3.png)
+![navigation](./output.png)
 
 Output of navigation bar windowed:
 
