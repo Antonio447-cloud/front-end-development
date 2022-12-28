@@ -1,26 +1,27 @@
-const questions = document.querySelectorAll('.question');
+const btn = document.querySelectorAll('.question-btn');
 
-questions.forEach(function (question) {
-    const btn = question.querySelector('.question-btn')
-    btn.addEventListener('click', function () {
-        questions.forEach(function (item) {
-            if (item !== question) {
-                item.classList.remove('show-text');
-            }
-        });
-        question.classList.toggle('show-text');
-        console.log(question)
+btn.forEach(function (step) {
+    step.addEventListener('click', function (e) {
+        const questions = e.currentTarget.parentElement.parentElement
+        questions.classList.toggle('show-text')
+        console.log(questions);
     });
 });
 
 
-/* traversing the DOM */
+/* without traversing the DOM */
 
-// const btn = document.querySelectorAll('.question-btn');
+// const questions = document.querySelectorAll('.question');
 
-// btn.forEach(function (btn) {
-//   btn.addEventListener('click', function(e) {
-//   const question = e.currentTarget.parentElement.parentElement
-//   question.classList.toggle('show-text');
-//   });
+// questions.forEach(function (step) {
+//     const btn = step.querySelector('.question-btn')
+//     btn.addEventListener('click', function () {
+//         questions.forEach(function (look) {
+//             if (look !== step) {
+//                 look.classList.remove('show-text')
+//             }
+//         });
+//         step.classList.toggle('show-text')
+//         console.log(step);
+//     });
 // });
