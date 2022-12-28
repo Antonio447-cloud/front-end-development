@@ -1,28 +1,24 @@
-// set initial value
+// set initial count
 let count = 0;
 
-// select value and button
+// select value and btn
 const value = document.querySelector('#value');
 const btns = document.querySelectorAll('.btn');
 
 btns.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
-        const styles = (e.currentTarget.classList);
-        if(styles.contains('decrease')) {
-            count --;
-        }
-        else if(styles.contains('increase')) {
-            count ++;
+        const step = e.currentTarget.classList;
+        if (step.contains('decrease')) {
+            count--;
+        } else if (step.contains('increase')) {
+            count++;
         } else {
             count = 0;
-        }
-        if(count > 0) {
+        } if (count > 0) {
             value.style.color = 'green';
-        }
-        if(count < 0) {
+        } else if (count < 0) {
             value.style.color = 'red';
-        }
-        if(count === 0) {
+        } else if (count === 0) {
             value.style.color = '#222';
         }
         value.textContent = count;
