@@ -1,15 +1,15 @@
-const colors = ["green", "purple", "red", "blue", "rgba(164, 180, 21)"];
-const btn = document.getElementById('btn');
-const clr = document.querySelector('.color');
+const array = ["green", "purple", "yellow", "blue"];
+const arrayBtn = document.getElementById('btn');
+const arrayColor = document.querySelector('.color');
 
 function getRandomNumber() {
-  return Math.floor (Math.random() * colors.length)
+    return Math.floor (Math.random() * array.length);
 };
 
-btn.addEventListener('click', function () {
-    const randomNumber = getRandomNumber();
-    document.body.style.backgroundColor = colors[randomNumber];
-    clr.textContent = colors[randomNumber];
-    console.log(randomNumber);
-    console.log(clr);
+arrayBtn.addEventListener('click', function () {
+    const random = getRandomNumber();
+    document.body.style.backgroundColor = array[random];
+    arrayColor.textContent = array[random];
+    console.log(array[random]);
+    console.log(random);
 });
