@@ -1,27 +1,30 @@
-// set initial count
-let count = 0;
+const btn = document.querySelectorAll('.btn');
+const btnValue = document.querySelector('#value');
 
-// select value and btn
-const value = document.querySelector('#value');
-const btns = document.querySelectorAll('.btn');
+let counter = 0;
 
-// iterate elements and add event listener
-btns.forEach(function (btn) {
-    btn.addEventListener('click', function (e) {
-        const step = e.currentTarget.classList;
-        if (step.contains('decrease')) {
-            count--;
-        } else if (step.contains('increase')) {
-            count++;
-        } else {
-            count = 0;
-        } if (count > 0) {
-            value.style.color = 'green';
-        } else if (count < 0) {
-            value.style.color = 'red';
-        } else if (count === 0) {
-            value.style.color = '#222';
+btn.forEach(function(steps) {
+    steps.addEventListener('click', function(e) {
+        const random = e.currentTarget.classList;
+        if (random.contains('decrease')) {
+            counter--
+        } 
+        else if (random.contains('increase')) {
+            counter++
+        } 
+        else (
+            counter = 0
+        )
+        if (counter > 0) {
+            btnValue.style.color = 'green'
+        } 
+        else if (counter < 0) {
+            btnValue.style.color = 'red'
+        } 
+        else if (counter === 0) {
+            btnValue.style.color = '#222'
         }
-        value.textContent = count;
+
+        btnValue.textContent = counter;
     });
 });
