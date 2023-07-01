@@ -8,11 +8,9 @@ btn.forEach(function(steps) {
         const random = e.currentTarget.classList;
         if (random.contains('decrease')) {
             counter--
-        } 
-        else if (random.contains('increase')) {
+        } else if (random.contains('increase')) {
             counter++
-        } 
-        else (
+        } else (
             counter = 0
         )
         if (counter > 0) {
