@@ -45,7 +45,7 @@ let currentId = 0;
 
 // create function
 window.addEventListener('DOMContentLoaded', function () {
-    showPerson();
+    showPerson()
 });
 
 // load person based on currentId
@@ -56,29 +56,29 @@ function showPerson() {
     job.textContent = item.work
     info.textContent = item.text
     console.log(currentId);
-    console.log(author.textContent);
+    console.log(author);
 };
 
 // setup nextBtn
 nextBtn.addEventListener('click', function () {
-    currentId ++;
+    currentId ++
     if (currentId > reviews.length - 1) {
-        currentId = 0;
+        currentId = 0
     }
-    showPerson();
+    showPerson()
 });
 
 // setup prevBtn
 prevBtn.addEventListener('click', function () {
-    currentId --;
+    currentId --
     if (currentId < 0) {
-        currentId = reviews.length - 1;
-    };
-    showPerson();
+        currentId = reviews.length - 1
+    }
+    showPerson()
 });
 
 // setup randomBtn
 randomBtn.addEventListener('click', function () {
-    currentId = Math.floor (Math.random() * reviews.length);
-    showPerson();
+    currentId = Math.floor (Math.random() * reviews.length)
+    showPerson()
 });
