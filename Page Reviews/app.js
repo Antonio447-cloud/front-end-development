@@ -56,7 +56,7 @@ function showPerson() {
     job.textContent = item.work
     info.textContent = item.text
     console.log(currentId);
-    console.log(author);
+    console.log(author.textContent);
 };
 
 // setup nextBtn
