@@ -10,6 +10,6 @@ arrayBtn.addEventListener('click', function () {
     const random = getRandomNumber();
     document.body.style.backgroundColor = array[random];
     arrayColor.textContent = array[random];
-    console.log(array[random]);
     console.log(random);
+    console.log(array);
 });
