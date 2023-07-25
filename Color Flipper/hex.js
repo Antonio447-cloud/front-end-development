@@ -15,5 +15,6 @@ arrayBtn.addEventListener('click', function () {
         arrayColor.textContent = hexColor;
         console.log(hexColor);
         console.log(random);
+        console.log(array);
     };
 });
