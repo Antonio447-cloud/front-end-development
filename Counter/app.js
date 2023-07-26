@@ -22,5 +22,6 @@ btn.forEach(function (step) {
             btnColor.style.color = '#222'
         }
             btnColor.textContent = counter
+            console.log(btnColor)
     });
 });
