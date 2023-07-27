@@ -1,4 +1,4 @@
-const reviews = [
+const array = [
     {
         id: 1,
         name: "Susan Smith",
@@ -29,56 +29,56 @@ const reviews = [
     },
 ];
 
-// select elements
-const img = document.getElementById('person-img');
+// select html elements by id and store each in a variable
+const pic = document.getElementById('person-img');
 const author = document.getElementById('author');
 const job = document.getElementById('job');
 const info = document.getElementById('info');
 
-// select buttons
-const nextBtn = document.querySelector('.next-btn');
+// select buttons using querySelector() method and store each in a variable
 const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
 
-// set currentId
-let currentId = 0;
-
-// create function
+// load and parse DOM elements using the window object
 window.addEventListener('DOMContentLoaded', function () {
-    showPerson()
+    getPersonId()
 });
 
-// load person based on currentId
-function showPerson() {
-    const item = reviews[currentId];
-    img.src = item.image
-    author.textContent = item.name
-    job.textContent = item.work
-    info.textContent = item.text
-    console.log(currentId);
-    console.log(author);
+// set indexId of array and store it in a variable
+let indexId = 0
+
+// create function to get data from array and update such data in the DOM tree
+function getPersonId() {
+    const tool = array[indexId]
+    pic.src = tool.image
+    author.textContent = tool.name
+    job.textContent = tool.work
+    info.textContent = tool.text
+    console.log(indexId);
+    console.log(array);
 };
 
-// setup nextBtn
-nextBtn.addEventListener('click', function () {
-    currentId ++
-    if (currentId > reviews.length - 1) {
-        currentId = 0
-    }
-    showPerson()
-});
-
-// setup prevBtn
+// show previous person
 prevBtn.addEventListener('click', function () {
-    currentId --
-    if (currentId < 0) {
-        currentId = reviews.length - 1
-    }
-    showPerson()
+    indexId--
+    if (indexId < 0) {
+        indexId = array.length - 1
+    };
+    getPersonId()
 });
 
-// setup randomBtn
+// show next person
+nextBtn.addEventListener('click', function () {
+    indexId++
+    if (indexId > array.length - 1) {
+        indexId = 0
+    };
+    getPersonId()
+});
+
+// show random person
 randomBtn.addEventListener('click', function () {
-    currentId = Math.floor (Math.random() * reviews.length)
-    showPerson()
+    indexId = Math.floor (Math.random() * array.length)
+    getPersonId()
 });
