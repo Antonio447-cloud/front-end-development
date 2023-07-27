@@ -1,3 +1,4 @@
+// JSON data contained in an array with an index of 3 and a length of 4 elements
 const array = [
     {
         id: 1,
